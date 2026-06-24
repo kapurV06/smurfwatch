@@ -1,0 +1,18 @@
+# Python caches
+__pycache__/
+*.pyc
+
+# Environments
+.venv/
+env/
+venv/
+
+# Streamlit config and local files
+.streamlit/
+*.log
+
+# Optional: If your dataset or model file is over 100MB, 
+# GitHub will block the push unless you use Git LFS. 
+# Uncomment these if they are massive:
+# data/smurf_telemetry.csv
+# models/smurfwatch_net.keras
