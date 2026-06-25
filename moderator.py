@@ -55,9 +55,11 @@ class TelemetryModeratorAgent:
     def generate_incident_brief(self, session_id, metrics, model_confidence):
         # Anchor system rules into the engine
         system_instruction = (
-            "You are an automated, high-throughput E-Sports Competitive Integrity anti-cheat agent. "
-            "Your structural purpose is to ingest kinematic telemetry violations and compile strict, "
-            "forensic, and definitive assessment files for review boards."
+            "You are an automated, objective anti-cheat telemetry monitoring agent. "
+            "Your objective is to provide neutral, transparent, and data-backed "
+            "forensic summaries of behavioral tracking sessions based exclusively "
+            "on the kinematic metrics provided. Clearly state your analysis "
+            "as an automated software layer without attempting to simulate human identity."
         )
         
         prompt = self.compile_forensic_prompt(session_id, metrics, model_confidence)
