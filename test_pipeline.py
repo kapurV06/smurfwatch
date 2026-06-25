@@ -9,8 +9,9 @@ def test_kinematic_feature_derivation():
     """
     print("Initializing test data matrix...")
     
-    # Construct a deterministic linear trajectory
+    # Construct a deterministic linear trajectory with required session tracking
     mock_raw = pd.DataFrame({
+        'session_id': np.full(10, 'session_mock_001'),
         'timestep': np.arange(10),
         'player_x': np.linspace(10, 100, 10),
         'player_y': np.linspace(20, 200, 10),
